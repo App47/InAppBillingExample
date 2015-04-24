@@ -29,7 +29,7 @@ import android.os.RemoteException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.vending.billing.IInAppBillingService;
+import com.ecat.vending.billing.IInAppBillingService;
 
 import org.json.JSONException;
 
@@ -262,8 +262,8 @@ public class IabHelper {
             }
         };
 
-        Intent serviceIntent = new Intent("com.android.vending.billing.InAppBillingService.BIND");
-        serviceIntent.setPackage("com.android.vending");
+        Intent serviceIntent = new Intent("com.ecat.vending.billing.InAppBillingService.BIND");
+        serviceIntent.setPackage("com.ecat.estore");
         if (!mContext.getPackageManager().queryIntentServices(serviceIntent, 0).isEmpty()) {
             // service available to handle that Intent
             mContext.bindService(serviceIntent, mServiceConn, Context.BIND_AUTO_CREATE);

@@ -29,7 +29,7 @@ import android.os.RemoteException;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.gametree.vending.billing.IInAppBillingService;
+import com.fourparents.vending.billing.IInAppBillingService;
 
 import org.json.JSONException;
 
@@ -262,8 +262,8 @@ public class IabHelper {
             }
         };
 
-        Intent serviceIntent = new Intent("com.gametree.vending.billing.InAppBillingService.BIND");
-        serviceIntent.setPackage("com.gametree.estore");
+        Intent serviceIntent = new Intent("com.fourparents.vending.billing.InAppBillingService.BIND");
+        serviceIntent.setPackage("com.fourparents.estore");
         if (!mContext.getPackageManager().queryIntentServices(serviceIntent, 0).isEmpty()) {
             // service available to handle that Intent
             mContext.bindService(serviceIntent, mServiceConn, Context.BIND_AUTO_CREATE);

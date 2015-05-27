@@ -1,11 +1,8 @@
 /*
- * Copyright (C) 2012 The Android Open Source Project
+ * Copyright (C) 2014 App47, Inc.
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Service agreement between App47 and GameTree, Inc.
  * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,7 +11,7 @@
  * limitations under the License.
  */
 
-package com.gametree.vending.billing;
+package com.fourparents.vending.billing;
 
 import android.os.Bundle;
 
